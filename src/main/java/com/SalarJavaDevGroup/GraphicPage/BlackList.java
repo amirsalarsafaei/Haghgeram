@@ -1,8 +1,10 @@
 package com.SalarJavaDevGroup.GraphicPage;
 
 import com.SalarJavaDevGroup.FileHandling.FileHandler;
+import com.SalarJavaDevGroup.FileHandling.Properties;
 import com.SalarJavaDevGroup.GraphicAgent;
 import com.SalarJavaDevGroup.GraphicComponents.GraphicHeaderFooter;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -19,8 +21,9 @@ public class BlackList {
         Scene scene = new Scene(mainPane);
         scene.getStylesheets().add("style.css");
         mainPane.setTop(GraphicHeaderFooter.headerToSetting());
-        ScrollPane blockScroll = new ScrollPane();
         VBox blockList = new VBox();
+        ScrollPane blockScroll = new ScrollPane(blockList);
+
         mainPane.setCenter(blockScroll);
         for (String blockedUsername: GraphicAgent.serverAgent.personalAgent.getBlocked(GraphicAgent.username, GraphicAgent.password)) {
             StackPane userAndUnBlock = new StackPane();
@@ -31,8 +34,13 @@ public class BlackList {
             ImageView unblock = FileHandler.getImage("unblock-setting");
             userAndUnBlock.getChildren().add(unblock);
             StackPane.setAlignment(unblock, Pos.CENTER_RIGHT);
-            userAndUnBlock.setPrefWidth(blockScroll.getPrefWidth());
+            blockScroll.widthProperty().addListener(event -> {
+                userAndUnBlock.setPrefWidth(blockScroll.getWidth()- 2 * (Properties.loadSize("scroll-border") +
+                        Properties.loadSize("medium-indent")));
+            });
             blockList.getChildren().add(userBox);
+            userBox.setId("down-line-grey");
+            userBox.setPadding(new Insets(Properties.loadSize("medium-indent")));
         }
         GraphicAgent.stage.setScene(scene);
     }
