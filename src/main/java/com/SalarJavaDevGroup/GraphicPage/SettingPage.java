@@ -101,6 +101,13 @@ public class SettingPage {
                 GraphicAgent.blackList.main();
             }
         });
+        logout.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                GraphicAgent.username = GraphicAgent.password = "";
+                GraphicAgent.authPage.login(GraphicAgent.stage);
+            }
+        });
         tilePane.getChildren().add(edit_profile);
         tilePane.getChildren().add(edit_privacy);
         tilePane.getChildren().add(delete_account);
