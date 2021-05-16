@@ -95,7 +95,12 @@ public class SettingPage {
 
             }
         });
+        black_list.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
 
+            }
+        });
         tilePane.getChildren().add(edit_profile);
         tilePane.getChildren().add(edit_privacy);
         tilePane.getChildren().add(delete_account);
