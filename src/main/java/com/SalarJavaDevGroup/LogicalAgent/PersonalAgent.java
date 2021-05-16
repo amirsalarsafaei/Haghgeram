@@ -373,4 +373,11 @@ public class PersonalAgent {
         user.setIsActive(activity);
         user.save();
     }
+
+    public ArrayList<String> getBlocked(String username, String password) {
+        if (!"success".equals(GraphicAgent.serverAgent.authAgent.login(username, password))) {
+            return new ArrayList<>();
+        }
+        return Load.LoadUser(username).getBlackList();
+    }
 }

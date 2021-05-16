@@ -10,7 +10,6 @@ import org.apache.logging.log4j.Logger;
 
 
 public class GraphicAgent {
-    private static final Logger logger = LogManager.getLogger(GraphicAgent.class);
     public static AuthPage authPage = new AuthPage();
     public static ServerAgent serverAgent = new ServerAgent();
     public static String username, password;
@@ -26,4 +25,5 @@ public class GraphicAgent {
     public static EditProfilePage editProfilePage = new EditProfilePage();
     public static EditPrivacy editPrivacy = new EditPrivacy();
     public static NotificationPage notificationPage = new NotificationPage();
+    public static BlackList blackList = new BlackList();
 }

@@ -27,16 +27,16 @@
   ],
   "SavedMessage": 17,
   "Following": [],
-  "Followers": [
-    "amirsalar"
-  ],
+  "Followers": [],
   "Blocked": [],
   "Muted": [],
   "FollowRequests": [],
   "Events": [
     "amirsalar Started Following you."
   ],
-  "BlockedBy": [],
+  "BlockedBy": [
+    "amirsalar"
+  ],
   "groups": [],
   "Pending": [],
   "Denied": [],

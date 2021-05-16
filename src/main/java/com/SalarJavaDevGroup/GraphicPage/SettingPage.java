@@ -98,7 +98,7 @@ public class SettingPage {
         black_list.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-
+                GraphicAgent.blackList.main();
             }
         });
         tilePane.getChildren().add(edit_profile);
