@@ -1,0 +1,192 @@
+.root {
+    -fx-font-size: 20;
+    -fx-font-family:  "Comic Sans MS";
+    -fx-background-color: #ffffff;
+}
+
+.text-field {
+    -fx-focus-color: #009CFF;
+    -fx-faint-focus-color: #009CFF;
+}
+
+.button {
+
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+}
+
+.button:hover {
+    -fx-background-color: #009CFF;
+    -fx-background-radius: 10;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 10;
+    -fx-text-fill: #ffffff;
+}
+
+#loginPanel {
+    -fx-border-width: 1px;
+    -fx-border-color: #cfcfcf;
+    -fx-border-radius: 50px;
+    -fx-border-insets: 100px 450px 100px 450px;
+}
+
+#error {
+    -fx-text-fill: #ff3131;
+}
+
+
+#registerPanel {
+    -fx-border-width: 1px;
+    -fx-border-color: #cfcfcf;
+    -fx-border-radius: 75px;
+    -fx-border-insets: 75px 30px 30px 30px;
+}
+
+
+
+.scroll-pane {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-color: #cfcfcf;
+    -fx-background-color: #ffffff;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+#send-box {
+    -fx-background-color: #ffffff;-fx-border-width: 2px;-fx-border-color: #dddddd;
+}
+
+#subtitle {
+    -fx-font-size: 24px;
+}
+
+#subtitle-wrap {
+    -fx-font-size: 24px;
+    -fx-wrap-text: true;
+}
+
+#black-fade {
+    -fx-background-color: #000000;
+    -fx-opacity: 0.5;
+}
+
+#grey-border {
+    -fx-border-color: #dddcdc;-fx-border-width: 1px;
+}
+
+#black-border {
+    -fx-border-color: #dddcdc;-fx-border-width: 1px;
+}
+#white-fade {
+    -fx-background-color: #ffffff; -fx-opacity : 0.7;
+}
+
+#grey-round-border {
+    -fx-border-color: #d2d2d2; -fx-border-width: 1px; -fx-border-radius: 30px;
+}
+
+#white-box {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-color: #dbdbdb;
+}
+
+.choice-box {
+    -fx-faint-focus-color: #009CFF;
+}
+
+.choice-box .menu-item:focused { -fx-background-color: #009CFF; }
+
+.choice-box .menu-item:focused > .label { -fx-text-fill : #ffffff}
+
+#white {
+    -fx-background-color: #ffffff;
+}
+
+#down-line-black {
+    -fx-border-color: #000000;
+    -fx-border-width: 0 0 1 0;
+}
+
+#down-line-grey {
+    -fx-border-color: #dddcdc;
+    -fx-border-width: 0 0 1 0;
+}
+
+#white-down-line-grey {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dddcdc;
+    -fx-border-width: 0 0 1 0;
+}
+
+#date-in-chat {
+    -fx-background-color: #c6c6c6;-fx-text-fill: #ffffff;
+    -fx-background-radius: 40px;
+}
+
+#search-bar {
+    -fx-border-radius: 30 30 30 30;
+    -fx-background-radius: 30 30 30 30;
+}
+
+#menu-button {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20px;
+}
+
+
+#menu-button:hover {
+    -fx-background-color: #e1f2ff;
+    -fx-background-radius: 40px;
+}
+
+#blue {
+    -fx-background-color: #009CFF;
+}
+
+#white-text {
+    -fx-text-fill: #ffffff;
+}
+
+#small-text {
+    -fx-font-size: 10px;
+}
+
+#medium-text {
+    -fx-font-size: 16px;
+}
+
+#message-box-user {
+    -fx-padding: 20px;
+    -fx-max-width: 500;
+    -fx-background-color: #bfbfbf;
+    -fx-background-radius: 20px;
+}
+
+#message-box-target {
+    -fx-padding: 7px;
+    -fx-max-width: 500;
+    -fx-background-color: #009CFF;
+    -fx-background-radius: 20px;
+}
+
+#message-sender {
+    -fx-text-fill: #000bb8;
+    -fx-font-size: 10px;
+}
+
+#preview-grey {
+    -fx-text-fill: #dddddd;
+    -fx-font-size: 16px;
+}
+
+#preview-white {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+}

@@ -1,0 +1,69 @@
+{
+  "id": 17,
+  "users": [
+    "binaryboy"
+  ],
+  "messages": [
+    {
+      "sender": "binaryboy",
+      "Content": "",
+      "timeSent": "15::May::2021 19::38::45",
+      "tweet": 27,
+      "id": 16,
+      "Read": [
+        "binaryboy"
+      ],
+      "imageName": null,
+      "hasImage": false
+    },
+    {
+      "sender": "binaryboy",
+      "Content": "afsddas",
+      "timeSent": "15::May::2021 22::32::48",
+      "tweet": -1,
+      "id": 17,
+      "Read": [
+        "binaryboy"
+      ],
+      "imageName": null,
+      "hasImage": false
+    },
+    {
+      "sender": "binaryboy",
+      "Content": "adadadad",
+      "timeSent": "15::May::2021 22::32::52",
+      "tweet": -1,
+      "id": 18,
+      "Read": [
+        "binaryboy"
+      ],
+      "imageName": null,
+      "hasImage": false
+    },
+    {
+      "sender": "binaryboy",
+      "Content": "addaadsasd",
+      "timeSent": "15::May::2021 22::32::55",
+      "tweet": -1,
+      "id": 19,
+      "Read": [
+        "binaryboy"
+      ],
+      "imageName": null,
+      "hasImage": false
+    },
+    {
+      "sender": "binaryboy",
+      "Content": "",
+      "timeSent": "16::May::2021 14::59::44",
+      "tweet": 30,
+      "id": 20,
+      "Read": [
+        "binaryboy"
+      ],
+      "imageName": null,
+      "hasImage": false
+    }
+  ],
+  "Name": ""
+}
