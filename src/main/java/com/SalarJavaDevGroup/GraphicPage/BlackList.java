@@ -4,12 +4,14 @@ import com.SalarJavaDevGroup.FileHandling.FileHandler;
 import com.SalarJavaDevGroup.FileHandling.Properties;
 import com.SalarJavaDevGroup.GraphicAgent;
 import com.SalarJavaDevGroup.GraphicComponents.GraphicHeaderFooter;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
@@ -37,6 +39,14 @@ public class BlackList {
             blockScroll.widthProperty().addListener(event -> {
                 userAndUnBlock.setPrefWidth(blockScroll.getWidth()- 2 * (Properties.loadSize("scroll-border") +
                         Properties.loadSize("medium-indent")));
+            });
+            unblock.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent mouseEvent) {
+                    GraphicAgent.serverAgent.profileAgent.toggleBlock(GraphicAgent.username, GraphicAgent.password,
+                            blockedUsername);
+                    main();
+                }
             });
             blockList.getChildren().add(userBox);
             userBox.setId("down-line-grey");
