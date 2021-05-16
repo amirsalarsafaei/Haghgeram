@@ -6,21 +6,27 @@ import com.SalarJavaDevGroup.GraphicAgent;
 import com.SalarJavaDevGroup.GraphicComponents.GraphicComponents;
 import com.SalarJavaDevGroup.GraphicComponents.GraphicHeaderFooter;
 import com.SalarJavaDevGroup.GraphicComponents.GraphicMenu;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.effect.DisplacementMap;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.TilePane;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 
 public class SettingPage {
     public void main() {
+
         BorderPane borderPane = new BorderPane();
+        StackPane mainPane = new StackPane();
+        mainPane.getChildren().add(borderPane);
         borderPane.setTop(GraphicHeaderFooter.header());
         borderPane.setLeft(GraphicMenu.Menu(GraphicAgent.stage));
         TilePane tilePane = new TilePane();
@@ -53,8 +59,40 @@ public class SettingPage {
         delete_account.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                GraphicAgent.serverAgent.personalAgent.deleteAccount(GraphicAgent.username, GraphicAgent.password);
-                GraphicAgent.authPage.login(GraphicAgent.stage);
+                BorderPane whitePane = new BorderPane();
+                whitePane.setId("white-fade");
+                mainPane.getChildren().add(whitePane);
+                Label confirmLabel = new Label(Properties.loadDialog("delete-confirm-dialog"));
+                Button yes = new Button(Properties.loadDialog("yes")),
+                        no = new Button(Properties.loadDialog("no"));
+                HBox yesNoBox = new HBox(Properties.loadSize("big-spacing"), yes, no);
+                VBox confirmVBox = new VBox(Properties.loadSize("medium-spacing"),confirmLabel, yesNoBox);
+                confirmVBox.setId("white");
+                confirmVBox.setAlignment(Pos.CENTER);
+                confirmVBox.setPadding(new Insets(Properties.loadSize("big-indent")));
+                HBox sizingConfBox = new HBox(confirmVBox);
+                VBox sizingConFVBox = new VBox(sizingConfBox);
+                yesNoBox.setAlignment(Pos.CENTER);
+                mainPane.getChildren().add(sizingConFVBox);
+                sizingConFVBox.setAlignment(Pos.CENTER);
+                sizingConfBox.setAlignment(Pos.CENTER);
+                confirmVBox.setId("white-box");
+                StackPane.setAlignment(sizingConFVBox, Pos.CENTER);
+                yes.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        GraphicAgent.serverAgent.personalAgent.deleteAccount(GraphicAgent.username, GraphicAgent.password);
+                        GraphicAgent.authPage.login(GraphicAgent.stage);
+                    }
+                });
+                no.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        sizingConFVBox.setVisible(false);
+                        whitePane.setVisible(false);
+                    }
+                });
+
             }
         });
 
@@ -67,7 +105,7 @@ public class SettingPage {
         tilePane.setPadding(new Insets(Properties.loadSize("big-indent")));
         tilePane.setVgap(Properties.loadSize("setting-page-tile-v-gap"));
         tilePane.setHgap(Properties.loadSize("setting-page-tile-h-gap"));
-        Scene scene = new Scene(borderPane);
+        Scene scene = new Scene(mainPane);
         scene.getStylesheets().add("style.css");
         GraphicAgent.stage.setScene(scene);
         GraphicAgent.scene = scene;
