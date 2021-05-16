@@ -81,7 +81,6 @@ public class Explorer {
         BorderPane borderPane = new BorderPane();
         StackPane stackPane = new StackPane(borderPane);
         Scene scene = new Scene(stackPane);
-        GraphicAgent.scene = scene;
         scene.getStylesheets().add("style.css");
         ImageView backButton = FileHandler.getImage("back");
         HBox backButtonBox = new HBox(backButton);

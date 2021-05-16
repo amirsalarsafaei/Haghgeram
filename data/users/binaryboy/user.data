@@ -34,9 +34,7 @@
   "Events": [
     "amirsalar Started Following you."
   ],
-  "BlockedBy": [
-    "amirsalar"
-  ],
+  "BlockedBy": [],
   "groups": [],
   "Pending": [],
   "Denied": [],
