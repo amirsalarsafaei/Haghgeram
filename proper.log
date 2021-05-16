@@ -7850,3 +7850,142 @@
 2021-05-17 00:39:18.684 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
 2021-05-17 00:39:18.684 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
 2021-05-17 00:39:18.685 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:42:36.728 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - binaryboy logged in
+2021-05-17 00:42:36.769 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - binaryboy logged in
+2021-05-17 00:42:36.820 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - binaryboy logged in
+2021-05-17 00:42:48.611 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:42:48.622 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:42:53.821 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:42:53.835 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.Models.User - amirsalar updated (id : 14)
+2021-05-17 00:42:53.842 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.FileHandling.Delete - file user.data deleted
+2021-05-17 00:42:53.843 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.FileHandling.Delete - file amirsalar deleted
+2021-05-17 00:42:53.843 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.PersonalAgent - amirsalar deleted account.
+2021-05-17 00:43:00.657 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar couldn't login
+2021-05-17 00:45:25.095 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar couldn't login
+2021-05-17 00:45:42.100 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.FileHandling.Save - user 20 folder Created
+2021-05-17 00:45:42.100 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.FileHandling.Save - User data file for user 20 created.
+2021-05-17 00:45:42.132 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.FileHandling.Save - Saved Conversation20
+2021-05-17 00:45:42.135 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.FileHandling.Save - user 15 folder Created
+2021-05-17 00:45:42.136 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.FileHandling.Save - User data file for user 15 created.
+2021-05-17 00:45:42.150 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.Models.User - User 15 Created
+2021-05-17 00:45:42.150 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar registered
+2021-05-17 00:45:48.473 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:48.509 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:56.018 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.778 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.802 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.802 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:45:58.804 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.804 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:45:58.814 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.815 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:45:58.815 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.815 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:45:58.823 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.823 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:45:58.824 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.824 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:45:58.829 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.836 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.836 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:45:58.836 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.836 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:45:58.844 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.844 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:45:58.845 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.845 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:45:58.856 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.856 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:45:58.857 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:45:58.857 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:02.650 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:02.651 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:02.651 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:02.651 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:02.654 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:02.654 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:02.654 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:02.654 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:02.656 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:02.656 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:02.656 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:02.656 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:02.657 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.193 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.193 [JavaFX Application Thread] WARN  com.SalarJavaDevGroup.util.Filter - In method delfind a key was not found to delete
+2021-05-17 00:46:07.193 [JavaFX Application Thread] WARN  com.SalarJavaDevGroup.util.Filter - In method delfind a key was not found to delete
+2021-05-17 00:46:07.193 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.194 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:07.194 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar started blocking binaryboy
+2021-05-17 00:46:07.201 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.Models.User - amirsalar updated (id : 15)
+2021-05-17 00:46:07.207 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.Models.User - binaryboy updated (id : 12)
+2021-05-17 00:46:07.212 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.212 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.212 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.212 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.216 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.216 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:07.216 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.217 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:07.217 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:07.217 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:07.218 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:12.521 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:14.183 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:14.184 [JavaFX Application Thread] WARN  com.SalarJavaDevGroup.util.Filter - In method delfind a key was not found to delete
+2021-05-17 00:46:14.184 [JavaFX Application Thread] WARN  com.SalarJavaDevGroup.util.Filter - In method delfind a key was not found to delete
+2021-05-17 00:46:14.184 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:14.184 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:14.184 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar stopped blocking binaryboy
+2021-05-17 00:46:14.189 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.Models.User - amirsalar updated (id : 15)
+2021-05-17 00:46:14.195 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.Models.User - binaryboy updated (id : 12)
+2021-05-17 00:46:14.197 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.834 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.847 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.847 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:16.848 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.848 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:16.856 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.856 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:16.857 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.857 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:16.867 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.867 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:16.867 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.868 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:16.872 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.877 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.877 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:16.878 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.878 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:16.885 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.885 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:16.886 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.886 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:16.893 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.893 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:16.894 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:16.894 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:19.816 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:19.816 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:19.816 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:19.816 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:19.820 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:19.820 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:19.820 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:19.821 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:19.822 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:19.822 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.329 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.329 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.329 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.329 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.333 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.333 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:29.333 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.333 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.334 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.334 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar muted binaryboy
+2021-05-17 00:46:29.334 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 00:46:29.334 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.ProfileAgent - amirsalar blocked binaryboy
+2021-05-17 00:46:29.335 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
