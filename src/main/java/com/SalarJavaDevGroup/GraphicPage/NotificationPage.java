@@ -115,8 +115,8 @@ public class NotificationPage {
         makeEvents(eventBox, centerPane);
         GraphicAgent.stage.setScene(scene);
         centerPane.widthProperty().addListener(event -> {
-            requestsBox.setPrefWidth(centerPane.getWidth()/ 2 - 4);
-            eventBox.setPrefWidth(centerPane.getWidth() / 2 - 4);
+            requestsBox.setPrefWidth(centerPane.getWidth()/ 2 - 2 * Properties.loadSize("scroll-border"));
+            eventBox.setPrefWidth(centerPane.getWidth() / 2 - 2 * Properties.loadSize("scroll-border"));
         });
     }
 }
