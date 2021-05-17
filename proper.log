@@ -8399,3 +8399,5 @@
 2021-05-17 15:08:43.319 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.Models.User - amirsalar updated (id : 15)
 2021-05-17 15:08:43.337 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
 2021-05-17 15:08:43.337 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - amirsalar logged in
+2021-05-17 15:18:08.842 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - yasi.vaziri couldn't login
+2021-05-17 15:18:09.280 [JavaFX Application Thread] INFO  com.SalarJavaDevGroup.LogicalAgent.AuthAgent - yasi.vaziri couldn't login
