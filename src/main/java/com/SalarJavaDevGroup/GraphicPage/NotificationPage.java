@@ -31,7 +31,7 @@ public class NotificationPage {
         titleBox.setPadding(new Insets(Properties.loadSize("medium-indent")));
         requestBox.getChildren().add(titleBox);
 
-        for (String requestUser: GraphicAgent.serverAgent.personalAgent.getPending(GraphicAgent.username, GraphicAgent.password)) {
+        for (String requestUser: GraphicAgent.serverAgent.personalAgent.getRequests(GraphicAgent.username, GraphicAgent.password)) {
             StackPane stackPane = new StackPane();
             HBox requestUserBox = new HBox(stackPane);
             requestUserBox.setId("down-line-grey");

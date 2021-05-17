@@ -26,4 +26,5 @@ public class GraphicAgent {
     public static EditPrivacy editPrivacy = new EditPrivacy();
     public static NotificationPage notificationPage = new NotificationPage();
     public static BlackList blackList = new BlackList();
+    public static RequestsPage requestsPage = new RequestsPage();
 }

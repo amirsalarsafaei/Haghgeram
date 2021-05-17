@@ -84,7 +84,6 @@ public class ProfileAgent {
         if (!userExist(targetUser))
             return false;
         User user = Load.LoadUser(username);
-        logger.info(username + " muted " + targetUser);
         return Filter.boolFind(user.getMuted(), targetUser);
     }
 
@@ -95,7 +94,6 @@ public class ProfileAgent {
         if (!userExist(targetUser))
             return false;
         User user = Load.LoadUser(username);
-        logger.info(username + " blocked " + targetUser);
         return Filter.boolFind(user.getBlackList(), targetUser);
     }
 

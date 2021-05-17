@@ -28,7 +28,7 @@ public class NotificationAgent {
         Filter.delFind(targetUser.getPending(), username);
         user.getFollowers().add(target);
         targetUser.getEvents().add(username + " " + Properties.loadDialog("accepted-request"));
-        user.getEvents().add(username + " " + Properties.loadDialog("start-follow"));
+        user.getEvents().add(target + " " + Properties.loadDialog("start-follow"));
         logger.info(username + " accepted " +target + " request");
         targetUser.getFollowing().add(target);
         targetUser.Accepted.add(username);

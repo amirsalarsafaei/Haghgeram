@@ -108,6 +108,12 @@ public class SettingPage {
                 GraphicAgent.authPage.login(GraphicAgent.stage);
             }
         });
+        requests_status.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                GraphicAgent.requestsPage.main();
+            }
+        });
         tilePane.getChildren().add(edit_profile);
         tilePane.getChildren().add(edit_privacy);
         tilePane.getChildren().add(delete_account);

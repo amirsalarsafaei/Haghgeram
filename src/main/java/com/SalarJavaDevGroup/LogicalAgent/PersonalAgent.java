@@ -345,7 +345,7 @@ public class PersonalAgent {
         logger.info(username + " deleted account.");
     }
 
-    public ArrayList<String> getPending(String username, String password) {
+    public ArrayList<String> getRequests(String username, String password) {
         if (!"success".equals(GraphicAgent.serverAgent.authAgent.login(username, password))) {
             return new ArrayList<>();
         }
@@ -380,4 +380,26 @@ public class PersonalAgent {
         }
         return Load.LoadUser(username).getBlackList();
     }
+
+    public ArrayList<String> getAccepted(String username, String password) {
+        if (!"success".equals(GraphicAgent.serverAgent.authAgent.login(username, password))) {
+            return new ArrayList<>();
+        }
+        return Load.LoadUser(username).Accepted;
+    }
+
+    public ArrayList<String> getRejected(String username, String password) {
+        if (!"success".equals(GraphicAgent.serverAgent.authAgent.login(username, password))) {
+            return new ArrayList<>();
+        }
+        return Load.LoadUser(username).Denied;
+    }
+
+    public ArrayList<String> getPending(String username, String password) {
+        if (!"success".equals(GraphicAgent.serverAgent.authAgent.login(username, password))) {
+            return new ArrayList<>();
+        }
+        return Load.LoadUser(username).Pending;
+    }
+
 }

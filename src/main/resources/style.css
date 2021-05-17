@@ -190,3 +190,13 @@
     -fx-text-fill: #ffffff;
     -fx-font-size: 16px;
 }
+
+#up-down-line-black {
+    -fx-border-color: #000000;
+    -fx-border-width: 1 0 1 0;
+}
+
+#subtitle-blue {
+    -fx-font-size: 40px;
+    -fx-text-fill: #009CFF;
+}
