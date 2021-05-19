@@ -1,0 +1,22 @@
+{
+  "id": 26,
+  "users": [
+    "binaryboy",
+    "sadat"
+  ],
+  "messages": [
+    {
+      "sender": "binaryboy",
+      "Content": "saddddddddddddddddddddddd\ndasssssssssssss\ndsaaaa",
+      "timeSent": "19::May::2021 22::05::49",
+      "tweet": -1,
+      "id": 24,
+      "Read": [
+        "binaryboy"
+      ],
+      "imageName": null,
+      "hasImage": false
+    }
+  ],
+  "Name": ""
+}
