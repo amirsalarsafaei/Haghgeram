@@ -9,7 +9,9 @@ import com.SalarJavaDevGroup.GraphicComponents.GraphicHeaderFooter;
 import com.SalarJavaDevGroup.GraphicComponents.GraphicMenu;
 import com.SalarJavaDevGroup.GraphicComponents.GraphicTweet;
 import com.SalarJavaDevGroup.Models.Conversation;
+import com.SalarJavaDevGroup.Models.Group;
 import com.SalarJavaDevGroup.Models.Message;
+import com.SalarJavaDevGroup.Models.Tweet;
 import com.SalarJavaDevGroup.util.Filter;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -41,6 +43,173 @@ public class MessengerPage {
     public Label lastPreview;
     StackPane stackPane;
 
+
+    public static void setGroupMessage(StackPane Pane) {
+        ArrayList<String> toUsers = new ArrayList<>();
+        BorderPane WhitePane = new BorderPane();
+        Pane.getChildren().add(WhitePane);
+        WhitePane.setId("white-fade");
+        VBox vBox = new VBox();
+        vBox.setMaxWidth(Properties.loadSize("forward-box-max-width"));
+        vBox.setMaxHeight(Properties.loadSize("forward-box-max-height"));
+        vBox.setAlignment(Pos.CENTER);
+        BorderPane borderPane = new BorderPane();
+        vBox.getChildren().add(borderPane);
+        vBox.setId("white-box");
+        DropShadow dropShadow = new DropShadow(Properties.loadSize("small-shadow"), Color.BLACK);
+        vBox.setEffect(dropShadow);
+        Pane.getChildren().add(vBox);
+        StackPane.setAlignment(vBox, Pos.CENTER);
+        ScrollPane scrollPane = new ScrollPane();
+        borderPane.setCenter(scrollPane);
+        VBox userList = new VBox();
+        scrollPane.setContent(userList);
+        ImageView addUsers = FileHandler.getImage("forward");
+        TextArea messageArea = new TextArea();
+        messageArea.setPrefColumnCount(Properties.loadNumbers("setGroupMessageColumn"));
+        HBox addUsersBox = new HBox(Properties.loadSize("medium-spacing"), messageArea, addUsers);
+        addUsersBox.setAlignment(Pos.CENTER);
+        addUsersBox.setPadding(new Insets(Properties.loadSize("small-indent")));
+        borderPane.setTop(addUsersBox);
+        borderPane.setPrefSize(Properties.loadSize("forward-inbox-pref-width"),
+                Properties.loadSize("forward-inbox-pref-height"));
+        Label type = new Label(Properties.loadDialog("followings"));
+        HBox typeBox = new HBox(type);
+        typeBox.setId("down-line-black");
+        typeBox.setAlignment(Pos.CENTER);
+        userList.getChildren().add(typeBox);
+        for (String following : GraphicAgent.serverAgent.personalAgent.getFollowing(GraphicAgent.username, GraphicAgent.password)) {
+            StackPane stackPane = new StackPane();
+            HBox hBox = new HBox(stackPane);
+            stackPane.setPrefWidth(Properties.loadSize("forward-following-width"));
+            userList.getChildren().add(hBox);
+            hBox.setPadding(new Insets(Properties.loadSize("small-indent")));
+            Label name = new Label(following);
+            stackPane.getChildren().add(name);
+            StackPane.setAlignment(name, Pos.CENTER_LEFT);
+            final boolean[] inList = {false};
+            ImageView check = FileHandler.getImage("check-" + inList[0]);
+            stackPane.getChildren().add(check);
+            StackPane.setAlignment(check, Pos.CENTER_RIGHT);
+            hBox.setId("down-line-grey");
+
+            check.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent mouseEvent) {
+                    inList[0] = !inList[0];
+                    check.setImage(FileHandler.getImage("check-" + inList[0]).getImage());
+
+                    if (inList[0])
+                        toUsers.add(following);
+                    else
+                        Filter.delFind(toUsers, following);
+                }
+            });
+        }
+
+        type = new Label(Properties.loadDialog("groups"));
+
+        typeBox = new HBox(type);
+        typeBox.setId("down-line-black");
+        typeBox.setAlignment(Pos.CENTER);
+        userList.getChildren().add(typeBox);
+        ArrayList<Group> toGroups = new ArrayList<>();
+        for (Group group : GraphicAgent.serverAgent.groupAgent.getGroups(GraphicAgent.username,  GraphicAgent.password)) {
+            StackPane stackPane = new StackPane();
+            HBox hBox = new HBox(stackPane);
+            stackPane.setPrefWidth(Properties.loadSize("forward-following-width"));
+            userList.getChildren().add(hBox);
+            hBox.setPadding(new Insets(Properties.loadSize("small-indent")));
+            Label name = new Label(group.getName());
+            stackPane.getChildren().add(name);
+            StackPane.setAlignment(name, Pos.CENTER_LEFT);
+            final boolean[] inList = {false};
+            ImageView check = FileHandler.getImage("check-" + inList[0]);
+            stackPane.getChildren().add(check);
+            StackPane.setAlignment(check, Pos.CENTER_RIGHT);
+            hBox.setId("down-line-grey");
+
+            check.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent mouseEvent) {
+                    inList[0] = !inList[0];
+                    check.setImage(FileHandler.getImage("check-" + inList[0]).getImage());
+
+                    if (inList[0])
+                        toGroups.add(group);
+                    else
+                        toGroups.remove(group);
+
+                }
+            });
+        }
+
+        type = new Label(Properties.loadDialog("conv-and-groups"));
+
+        typeBox = new HBox(type);
+        typeBox.setId("down-line-black");
+        typeBox.setAlignment(Pos.CENTER);
+        userList.getChildren().add(typeBox);
+        ArrayList<Conversation> toConv = new ArrayList<>();
+        for (Conversation conv : GraphicAgent.serverAgent.messengerAgent.getConversation(GraphicAgent.username,  GraphicAgent.password)) {
+            if (!conv.isGroup() && !conv.isSavedMessage() && GraphicAgent.serverAgent.profileAgent.Follows(GraphicAgent.username,
+                    GraphicAgent.password, conv.getName(GraphicAgent.username)))
+                continue;
+
+
+            StackPane stackPane = new StackPane();
+            HBox hBox = new HBox(stackPane);
+            stackPane.setPrefWidth(Properties.loadSize("forward-following-width"));
+            userList.getChildren().add(hBox);
+            hBox.setPadding(new Insets(Properties.loadSize("small-indent")));
+            Label name = new Label(conv.getName(GraphicAgent.username));
+            stackPane.getChildren().add(name);
+            StackPane.setAlignment(name, Pos.CENTER_LEFT);
+            final boolean[] inList = {false};
+            ImageView check = FileHandler.getImage("check-" + inList[0]);
+            stackPane.getChildren().add(check);
+            StackPane.setAlignment(check, Pos.CENTER_RIGHT);
+            hBox.setId("down-line-grey");
+
+            check.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent mouseEvent) {
+                    inList[0] = !inList[0];
+                    check.setImage(FileHandler.getImage("check-" + inList[0]).getImage());
+
+                    if (inList[0])
+                        toConv.add(conv);
+                    else
+                        toConv.remove(conv);
+                }
+            });
+        }
+        addUsers.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                WhitePane.setVisible(false);
+                vBox.setVisible(false);
+                for (Group group : toGroups) {
+                    for (String user : group.getUsers()) {
+                        if (!Filter.boolFind(toUsers, user))
+                            toUsers.add(user);
+                    }
+                }
+                for (String user: toUsers)
+                    GraphicAgent.serverAgent.profileAgent.sendMessageFromProfile(GraphicAgent.username,
+                            GraphicAgent.password, user, messageArea.getText());
+                for (Conversation conv : toConv) {
+                    GraphicAgent.serverAgent.messengerAgent.sendMessage(GraphicAgent.username, GraphicAgent.password
+                            ,messageArea.getText(),conv.getId());
+                }
+                GraphicAgent.messengerPage.conversations(GraphicAgent.stage);
+            }
+        });
+        scrollPane.hbarPolicyProperty().setValue(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollPane.vbarPolicyProperty().setValue(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollPane.setPadding(new Insets(0));
+        userList.setPrefWidth(Properties.loadSize("forward-user-list-width"));
+    }
     public void setGroup() {
         ArrayList<String> res = new ArrayList<>();
         res.add(GraphicAgent.username);
@@ -75,7 +244,6 @@ public class MessengerPage {
         borderPane.setTop(addUsersBox);
         borderPane.setPrefSize(Properties.loadSize("set-group-chat-box-width"),
                 Properties.loadSize("set-group-chat-box-height") - 1);
-
         scrollPane.setPadding(new Insets(0));
         userList.setPrefWidth(Properties.loadSize("set-group-chat-box-width") - 4);
         for (String following : GraphicAgent.serverAgent.personalAgent.getFollowing(GraphicAgent.username, GraphicAgent.password)) {
@@ -122,7 +290,7 @@ public class MessengerPage {
         }
     }
 
-    public void conversations(Stage stage, Scene back) {
+    public void conversations(Stage stage) {
         BorderPane borderPane = new BorderPane();
         stackPane = new StackPane(borderPane);
         Scene scene = new Scene(stackPane);
@@ -133,7 +301,14 @@ public class MessengerPage {
         BorderPane messagePane = new BorderPane();
         borderPane.setCenter(messagePane);
         ImageView add_group = FileHandler.getImage("add-group-chat");
-        HBox hBox = new HBox(add_group);
+        ImageView forward = FileHandler.getImage("forward");
+        HBox hBox = new HBox(10, add_group, forward);
+        forward.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                setGroupMessage(stackPane);
+            }
+        });
         hBox.setAlignment(Pos.CENTER);
         messagePane.setTop(hBox);
         add_group.setOnMouseClicked(new EventHandler<MouseEvent>() {

@@ -1,0 +1,33 @@
+{
+  "id": 22,
+  "users": [
+    "binaryboy"
+  ],
+  "messages": [
+    {
+      "sender": "binaryboy",
+      "Content": "salam",
+      "timeSent": "18::May::2021 14::27::52",
+      "tweet": -1,
+      "id": 21,
+      "Read": [
+        "binaryboy"
+      ],
+      "imageName": null,
+      "hasImage": false
+    },
+    {
+      "sender": "binaryboy",
+      "Content": "ds",
+      "timeSent": "18::May::2021 14::28::02",
+      "tweet": -1,
+      "id": 22,
+      "Read": [
+        "binaryboy"
+      ],
+      "imageName": null,
+      "hasImage": true
+    }
+  ],
+  "Name": ""
+}

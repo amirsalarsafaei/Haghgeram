@@ -27,4 +27,10 @@ public class ServerAgent {
     public MessengerAgent messengerAgent = new MessengerAgent();
     public GroupAgent groupAgent = new GroupAgent();
     public AuthAgent authAgent = new AuthAgent();
+    public void setOnline(String username, String password) {
+        if (!"success".equals(authAgent.login(username, password)))
+            return;
+        Load.LoadUser(username).setLastOnline(LocalDateTime.now());
+        Load.LoadUser(username).save();
+    }
 }

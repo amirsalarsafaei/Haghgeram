@@ -1,0 +1,44 @@
+{
+  "Password": "amir2000",
+  "Name": "amirsalar",
+  "FamilyName": "Safaei",
+  "Username": "binaryboy",
+  "id": 17,
+  "Email": "",
+  "PhoneNumber": "",
+  "BirthDate": null,
+  "Bio": "",
+  "isActive": true,
+  "LastOnline": "19::May::2021 22::15::00",
+  "isOnline": false,
+  "Likes": [],
+  "tweets": [
+    31
+  ],
+  "comments": [],
+  "SavedMessage": 22,
+  "Following": [
+    "amirsalar",
+    "sadat"
+  ],
+  "Followers": [
+    "amirsalar"
+  ],
+  "Blocked": [],
+  "Muted": [],
+  "FollowRequests": [],
+  "Events": [
+    "amirsalar Started Following you."
+  ],
+  "BlockedBy": [],
+  "groups": [],
+  "Pending": [],
+  "Denied": [],
+  "Accepted": [],
+  "Conversations": [
+    25,
+    26
+  ],
+  "privateAccount": false,
+  "lastSeenSetting": "Everyone"
+}

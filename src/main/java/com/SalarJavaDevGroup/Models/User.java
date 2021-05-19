@@ -233,14 +233,6 @@ public class User {
         return Filter.boolFind(Blocked, username);
     }
 
-
-    public void retweet(Tweet tweet, String Content) {
-        Tweet retweet = new Tweet(getUsername(), Content, tweet.getId());
-        tweet.addRetweet(retweet.getId());
-        addTweet(retweet);
-        save();
-    }
-
     public ArrayList<Integer> getConversations() {
         return Conversations;
     }
@@ -291,5 +283,9 @@ public class User {
 
     public void setIsActive(boolean active) {
         isActive = active;
+    }
+
+    public void setLastOnline(LocalDateTime now) {
+        LastOnline = now;
     }
 }

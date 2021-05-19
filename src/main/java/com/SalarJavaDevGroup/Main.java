@@ -15,6 +15,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.net.URL;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static com.SalarJavaDevGroup.GraphicAgent.authPage;
 
@@ -29,6 +31,13 @@ public class Main extends Application {
         stage.setAlwaysOnTop(true);
         stage.setResizable(false);
         stage.show();
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                GraphicAgent.serverAgent.setOnline(GraphicAgent.username, GraphicAgent.password);
+            }
+        }, 0, 1000);
         GraphicAgent.stage = stage;
         authPage.login(stage);
     }

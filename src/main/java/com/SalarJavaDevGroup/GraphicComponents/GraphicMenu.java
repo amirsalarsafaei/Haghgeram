@@ -64,7 +64,7 @@ public class GraphicMenu {
         messengerBox.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                GraphicAgent.messengerPage.conversations(stage, stage.getScene());
+                GraphicAgent.messengerPage.conversations(stage);
             }
         });
         ImageView listImage = FileHandler.getImage("list");
